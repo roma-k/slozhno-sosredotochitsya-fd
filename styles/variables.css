@@ -2,3 +2,13 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+    --h1-font-size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    --h1-font-size-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --bg-image: url("../images/cover-image.png");
+    --bg-color: #000028;
+    --accent-color: #FF0070;
+    --regular-text-color: #F1B2CE;
+    --h1-text-color: #DB00FF;
+    --second-text-color: #000028;
+}
