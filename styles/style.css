@@ -1,6 +1,9 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
     padding: 10px;
     background-color: var(--bg-color);
     background-image: var(--bg-image);
@@ -97,7 +100,7 @@
     border: 1px solid var(--accent-color);
 }
 
-.header__title {
+.page-title {
     font-weight: 700;
     font-size: var(--h1-font-size-mobile);
     line-height: 82.5%;
@@ -111,13 +114,51 @@
     align-self: top;
 }
 
-.title-decor {
+.highlighted-text-m {
     background-color: var(--accent-color);
     color: var(--second-text-color);
     font-weight: 700;
     line-height: 23px;
     text-align: start;
 }
+
+.highlighted-text-s {
+    margin-bottom: 10px;
+    background-color: var(--accent-color);
+    color: var(--second-text-color);
+    font-weight: 400;
+    line-height: 23px;
+    text-align: start;
+}
+
+.main {
+    color: var(--regular-text-color);
+}
+
+.main__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+}
+
+.article__title {
+    margin-bottom: 20px;
+font-size: 18px;
+line-height: 23px;
+color: var(--accent-color);
+}
+
+.article__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.article__subtitle {
+    margin-bottom: 10px;
+}
+
+
 
 .footer {
     position: relative;
