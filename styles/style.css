@@ -1,8 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-    max-inline-size: 100vw;
-    overflow: hidden;
+    padding: 10px;
     background-color: var(--bg-color);
     background-image: var(--bg-image);
     background-repeat: no-repeat;
@@ -17,19 +16,19 @@
 
 .header {
     display: grid;
+    padding-bottom: 10px;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr min-content 1fr;
     align-items: center;
     position: relative;
-    padding: 10px;
     block-size: 100vh;
 }
 
 .decorated-zone:after {
     content: "";
     position: absolute;
-    bottom: 10px;
-    left: 10px;
+    bottom: 20px;
+    left: 0;
     display: block;
     width: 25px;
     height: 25px;
@@ -40,8 +39,8 @@
 .decorated-zone:before {
     content: "";
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 0;
+    right: 0;
     display: block;
     width: 25px;
     height: 25px;
@@ -55,8 +54,8 @@
     inline-size: 52px;
     justify-content: space-between;
     align-items: center;
-    top: 10px;
-    right: 20px;
+    top: 0;
+    right: 10px;
     color: var(--accent-color);
     line-height: 25px;
 }
@@ -107,8 +106,9 @@
 }
 
 .header__text-content {
-    inline-size: 50%;
+    inline-size: 100%;
     justify-self: right;
+    align-self: top;
 }
 
 .title-decor {
