@@ -14,7 +14,7 @@
     font-family: "IBM Plex mono", monospace;
     font-size: 18px;
 
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+    /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
 
 .header {
@@ -142,10 +142,9 @@
 }
 
 .article__title {
-    margin-bottom: 20px;
-font-size: 18px;
-line-height: 23px;
-color: var(--accent-color);
+    font-size: 18px;
+    line-height: 23px;
+    color: var(--accent-color);
 }
 
 .article__list {
@@ -158,7 +157,11 @@ color: var(--accent-color);
     margin-bottom: 10px;
 }
 
-
+.article {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
 
 .footer {
     position: relative;
