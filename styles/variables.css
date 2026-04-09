@@ -11,4 +11,9 @@
     --regular-text-color: #F1B2CE;
     --h1-text-color: #DB00FF;
     --second-text-color: #000028;
+    --page-padding: 10px;
+    --main-content-gap: 50px;
+    --list-gap: 20px;
+    --article-gap: 20px;
+    --galery-gap: 10px;
 }

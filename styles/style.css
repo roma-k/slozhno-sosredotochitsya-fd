@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-    padding: 0 10px;
+    padding: 0 var(--page-padding);
     background-color: var(--bg-color);
     background-image: var(--bg-image);
     background-repeat: no-repeat;
@@ -13,6 +13,7 @@
     background-size: cover;
     font-family: "IBM Plex mono", monospace;
     font-size: 18px;
+    inline-size: 100%;
 
     /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
@@ -138,7 +139,7 @@
 .main__content {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 50px;
+    gap: var(--main-content-gap);
 }
 
 .article__title {
@@ -150,7 +151,7 @@
 .article__list {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: var(--list-gap);
 }
 
 .article__subtitle {
@@ -160,7 +161,23 @@
 .article {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: var(--article-gap);
+}
+
+.galery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, min-content);
+    max-width: 100%;
+    justify-items: center;
+    align-items: center;
+    gap: var(--galery-gap);
+}
+
+.galery__img {
+    width: calc(100vw - var(--page-padding) * 2);
+    height: auto;
+    display: block;
 }
 
 .footer {
