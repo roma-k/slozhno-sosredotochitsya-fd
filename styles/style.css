@@ -18,9 +18,30 @@
     /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
 
+.link {
+    color: var(--regular-text-color);
+    text-decoration: none;
+    text-shadow: 2px 1px 0 var(--accent-color);
+}
+
+.link:hover {
+    border-bottom: 1px solid var(--regular-text-color);
+}
+
+.link:focus {
+    border: none;
+    outline: none;
+}
+
+.link:focus-visible {
+    border: 1px solid var(--regular-text-color);
+    offset: 1px;
+    outline: none;
+}
+
 .header {
     display: grid;
-    padding-bottom: 10px;
+    padding: 10px 0;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr min-content 1fr;
     align-items: center;
@@ -158,6 +179,14 @@
 
 .article__subtitle {
     margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+.article__subtitle-l {
+    font-size: 18px;
+    line-height: 1.3;
+    margin-bottom: 20px;
 }
 
 .article {
@@ -167,6 +196,10 @@
 }
 
 .galery {
+    gap: 10px;
+}
+
+.galery__content {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, min-content);
