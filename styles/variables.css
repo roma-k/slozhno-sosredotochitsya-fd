@@ -5,17 +5,39 @@
 :root {
     --h1-font-size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     --h1-font-size-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    --bg-image: url("../images/cover-image-dark.png");
-    --bg-color: #000028;
-    --accent-color: #FF0070;
-    --regular-text-color: #F1B2CE;
-    --h1-text-color: #DB00FF;
-    --second-text-color: #000028;
+
+    
     --page-padding: 10px;
     --main-content-gap: 50px;
     --list-gap: 20px;
     --article-gap: 20px;
     --galery-gap: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+ :root {
+        --bg-image: url("../images/cover-image-dark.png");
+    --bg-color: #000028;
+    --accent-color: #FF0070;
+    --regular-text-color: #F1B2CE;
+    --h1-text-color: #DB00FF;
+    --title-text-shadow: #FF0070;
+    --second-text-color: #000028;
+    --heighlighted-color: #FF0070;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-image: none;
+    --bg-color: #FFF1F7;
+    --second-text-color: #353430;
+    --regular-text-color: #353430;
+    --accent-color: #353430;
+    --heighlighted-color: #FF8DCB;
+    --h1-text-color: #FFC2E6;
+    --title-text-shadow: #FF8DCB;
+  }
 }
 
 @media (min-width: 768px) {

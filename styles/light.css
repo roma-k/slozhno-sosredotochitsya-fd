@@ -9,4 +9,16 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+    --bg-image: none;
+    --bg-color: #FFF1F7;
+    --second-text-color: #353430;
+    --regular-text-color: #353430;
+    --accent-color: #353430;
+    --heighlighted-color: #FF8DCB;
+    --h1-text-color: #FFC2E6;
+    --title-text-shadow: #FF8DCB;
+    
+    .rec-label {
+      display: none;
+    }
 }
