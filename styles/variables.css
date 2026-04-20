@@ -8,6 +8,7 @@
 
     
     --page-padding: 10px;
+    --page-gap: 40px;
     --main-content-gap: 50px;
     --list-gap: 20px;
     --article-gap: 20px;
@@ -42,6 +43,7 @@
 
 @media (min-width: 768px) {
     :root {
+      --page-gap: 60px;
         --page-padding: 20px;
         --main-content-gap: 80px;
         --list-gap: 20px;

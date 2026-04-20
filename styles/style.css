@@ -3,7 +3,7 @@
 .page {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: var(--page-gap);
     padding: 0 var(--page-padding);
     background-color: var(--bg-color);
     background-image: var(--bg-image);
@@ -41,7 +41,7 @@
 
 .header {
     display: grid;
-    padding: 10px 0;
+    padding: var(--page-padding) 0;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr min-content 1fr;
     align-items: center;
@@ -52,7 +52,7 @@
 .decorated-zone:after {
     content: "";
     position: absolute;
-    bottom: 10px;
+    bottom: var(--page-padding);
     left: 0;
     display: block;
     width: 25px;
@@ -64,7 +64,7 @@
 .decorated-zone:before {
     content: "";
     position: absolute;
-    top: 10px;
+    top: var(--page-padding);
     right: 0;
     display: block;
     width: 25px;
@@ -79,7 +79,7 @@
     inline-size: 52px;
     justify-content: space-between;
     align-items: center;
-    top: 10px;
+    top: var(--page-padding);
     right: 10px;
     color: var(--accent-color);
     line-height: 25px;
@@ -130,6 +130,7 @@
     line-height: 82.5%;
     color: var(--h1-text-color);
     text-shadow: 4px 4px 0 var(--title-text-shadow);
+    margin-left: -15px;
 }
 
 .header__text-content {
@@ -180,7 +181,8 @@
 }
 
 .intro__list,
-.problems__list {
+.problems__list,
+.solutions__list {
     display: grid;
     grid-template-columns: 1fr;
     gap: var(--list-gap);
