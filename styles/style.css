@@ -211,6 +211,10 @@
     gap: var(--galery-gap);
 }
 
+.galery__title {
+    font-size: 18px;
+}
+
 .galery__content {
     display: grid;
     grid-template-columns: 1fr;
@@ -230,7 +234,7 @@
 @media (min-width: 768px) {
     .article {
         max-width: calc(100vw - var(--page-padding) * 2);
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 236px 1fr 1fr;
         overflow: hidden;
     }
     .intro__list,
