@@ -185,11 +185,26 @@
             <article class="article galery">
                 <h3 class="galery__title highlighted-text-m">А можно в картинках?</h3>
                 <div class="galery__content">
-                    <img class="galery__img img-sunset" src="images/sunset.png" alt="векторное изображение заката">
-                    <img class="galery__img img-ice-cream" src="images/ice-cream.png"alt="векторное изображение мороженого">
-                    <img class="galery__img img-tape" src="images/tape.png"alt="векторное изображение пленочной кассеты">
-                    <img class="galery__img img-books" src="images/books.png" alt="векторное изображение книг">
-                    <img class="galery__img img-street" src="images/street.png" alt="векторное изображение улицы">
+                    <picture class="img-sunset">
+                        <source srcset="images/sunset.webp" type="image/webp">
+                        <img class="galery__img" src="images/sunset.png" alt="векторное изображение заката">
+                    </picture>
+                    <picture class="img-ice-cream">
+                        <source srcset="images/ice-cream.webp" type="image/webp">
+                        <img class="galery__img" src="images/ice-cream.png" alt="векторное изображение мороженого">
+                    </picture>
+                    <picture class="img-tape">
+                        <source srcset="images/tape.webp" type="image/webp">
+                        <img class="galery__img" src="images/tape.png" alt="векторное изображение пленочной кассеты">
+                    </picture>
+                    <picture class="img-books">
+                        <source srcset="images/books.webp" type="image/webp">
+                        <img class="galery__img" src="images/books.png" alt="векторное изображение книг">
+                    </picture>
+                    <picture class="img-street">
+                        <source srcset="images/street.webp" type="image/webp">
+                        <img class="galery__img" src="images/street.png" alt="векторное изображение улицы">
+                    </picture>
                 </div>
             </article>
         </section>

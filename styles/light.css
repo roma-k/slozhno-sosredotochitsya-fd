@@ -18,8 +18,10 @@
   --h1-text-color: #FFC2E6;
   --title-text-shadow: #FF8DCB;
   --link-shadow-color: #FF8DCB;
+}
 
-  .rec-label {
-    display: none;
-  }
+/* Правило для скрытия REC в светлой теме вынесено отдельно,
+   чтобы не нарушать синтаксис CSS (селектор не может быть вложен). */
+:root.theme-light .rec-label {
+  display: none;
 }
