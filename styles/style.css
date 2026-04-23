@@ -207,6 +207,7 @@
     max-width: calc(100vw - var(--page-padding) * 2);
 }
 
+
 .galery {
     gap: var(--galery-gap);
 }
@@ -231,12 +232,14 @@
     display: block;
 }
 
+
 @media (min-width: 768px) {
     .article {
         max-width: calc(100vw - var(--page-padding) * 2);
         grid-template-columns: 236px 1fr 1fr;
         overflow: hidden;
     }
+
     .intro__list,
     .article__solutions div {
         grid-column: span 2;
@@ -246,46 +249,55 @@
         grid-column: span 3;
     }
 
-     .galery__title {
-        grid-column: span 3; 
-    }
-
     .galery__content {
         grid-column: span 3;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-    }
-
-    .img-sunset {
-        grid-column: span 2;
-        grid-row: 1;
-    }
-
-    .img-ice-cream {
-        grid-column: 3;
-        grid-row: span 2;
-    }
-
-    .img-tape {
-        grid-column: 1;
-        grid-row: 2 / span 2;
-    }
-
-    .img-books {
-        grid-column: 2;
-        grid-row: 2;
-    }
-
-    .img-street {
-        grid-column: 2 / span 2;
-        grid-row: 3;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap: 20px;
     }
 
     .galery__img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        
     }
+
+    .img-sunset {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .img-ice-cream {
+        /* Мороженое: правая колонка, занимает две строки в высоту */
+        grid-column: 3 / 4;
+        grid-row: 1 / 3;
+    }
+
+    .img-tape {
+        /* Кассета: левая колонка, занимает две строки в высоту */
+        grid-column: 1 / 2;
+        grid-row: 2 / 4;
+    }
+
+    .img-books {
+        /* Книги: центральная ячейка */
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    .img-street {
+        /* Улица: нижний ряд, занимает вторую и третью колонки */
+        grid-column: 2 / 4;
+        grid-row: 3 / 4;
+    }
+
+
+    .galery__title {
+        grid-column: span 3;
+    }
+
 
 }
 
@@ -294,9 +306,11 @@
         justify-self: center;
         align-self: start;
     }
+
     .header__theme-menu-list {
         flex-direction: row;
     }
+
     .problems__list {
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -310,4 +324,3 @@
     position: relative;
     min-block-size: 100vh;
 }
-
