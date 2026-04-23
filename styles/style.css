@@ -221,8 +221,8 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, min-content);
     max-width: calc(100vw - var(--page-padding) * 2);
-    justify-items: center;
-    align-items: center;
+    justify-items: stretch;
+    align-items: stretch;
     gap: var(--galery-gap);
 }
 
@@ -231,11 +231,6 @@
     height: auto;
     display: block;
     object-fit: cover;
-}
-
-.galery__content {
-    align-items: stretch;
-    justify-items: stretch;
 }
 
 .galery__content picture {
