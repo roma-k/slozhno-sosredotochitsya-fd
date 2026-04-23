@@ -25,6 +25,7 @@
     --title-text-shadow: #FF0070;
     --second-text-color: #000028;
     --heighlighted-color: #FF0070;
+    --link-shadow-color: #FF0070;
   }
 }
 
@@ -38,6 +39,8 @@
     --heighlighted-color: #FF8DCB;
     --h1-text-color: #FFC2E6;
     --title-text-shadow: #FF8DCB;
+    --link-shadow-color: #FF8DCB;
+
   }
 }
 

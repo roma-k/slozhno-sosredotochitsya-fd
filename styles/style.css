@@ -21,7 +21,7 @@
 .link {
     color: var(--regular-text-color);
     text-decoration: none;
-    text-shadow: 2px 1px 0 var(--accent-color);
+    text-shadow: 2px 1px 0 var(--link-shadow-color);
 }
 
 .link:hover {

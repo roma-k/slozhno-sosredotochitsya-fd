@@ -17,7 +17,7 @@
     --heighlighted-color: #FF8DCB;
     --h1-text-color: #FFC2E6;
     --title-text-shadow: #FF8DCB;
-    
+    --link-shadow-color: #FF8DCB;
     .rec-label {
       display: none;
     }
