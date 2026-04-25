@@ -6,7 +6,7 @@
   --h1-font-size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --h1-font-size-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
 
-
+  --min-height: 668px;
   --page-padding: 10px;
   --page-gap: 40px;
   --main-content-gap: 50px;
@@ -19,6 +19,7 @@
 
 @media (min-width: 768px) {
   :root {
+    --min-height: 1024px;
     --page-gap: 60px;
     --page-padding: 20px;
     --main-content-gap: 80px;
@@ -30,6 +31,7 @@
 
 @media (min-width: 1024px) {
   :root {
+    --min-height: 768px;
     --page-padding: 20px;
     --main-content-gap: 80px;
     --list-gap: 20px;
