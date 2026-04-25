@@ -75,7 +75,7 @@
 
 .rec-label {
     position: absolute;
-    display: flex;
+    display: var(--display-toggle);
     inline-size: 52px;
     justify-content: space-between;
     align-items: center;

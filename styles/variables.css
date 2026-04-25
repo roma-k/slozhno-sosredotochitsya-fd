@@ -15,34 +15,7 @@
   --galery-gap: 10px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg-image: url("../images/cover-image-dark.png");
-    --bg-color: #000028;
-    --accent-color: #FF0070;
-    --regular-text-color: #F1B2CE;
-    --h1-text-color: #DB00FF;
-    --title-text-shadow: #FF0070;
-    --second-text-color: #000028;
-    --heighlighted-color: #FF0070;
-    --link-shadow-color: #FF0070;
-  }
-}
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --bg-image: none;
-    --bg-color: #FFF1F7;
-    --second-text-color: #353430;
-    --regular-text-color: #353430;
-    --accent-color: #353430;
-    --heighlighted-color: #FF8DCB;
-    --h1-text-color: #FFC2E6;
-    --title-text-shadow: #FF8DCB;
-    --link-shadow-color: #FF8DCB;
-
-  }
-}
 
 @media (min-width: 768px) {
   :root {

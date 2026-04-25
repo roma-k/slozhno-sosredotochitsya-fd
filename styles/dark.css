@@ -18,4 +18,20 @@
   --second-text-color: #000028;
   --heighlighted-color: #FF0070;
   --link-shadow-color: #FF0070;
+  --display-toggle: flex;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-image: url("../images/cover-image-dark.png");
+    --bg-color: #000028;
+    --accent-color: #FF0070;
+    --regular-text-color: #F1B2CE;
+    --h1-text-color: #DB00FF;
+    --title-text-shadow: #FF0070;
+    --second-text-color: #000028;
+    --heighlighted-color: #FF0070;
+    --link-shadow-color: #FF0070;
+    --display-toggle: flex;
+  }
 }
