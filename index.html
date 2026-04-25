@@ -22,7 +22,7 @@
 
 <body class="page">
     <header class="header decorated-zone">
-        <span class="rec-label">REC</span>
+        <span class="rec-label" aria-hidden="true">REC</span>
         <nav class="header__theme-menu">
             <ul class="header__theme-menu-list">
                 <li class="header__theme-menu-item">
@@ -49,8 +49,8 @@
             Или почему нам так сложно сконцентрироваться, особенно когда очень надо</p>
     </header>
     <main class="main">
-        <section class="main__content">
-            <article class="article article__intro">
+        
+            <section class="article article__intro">
                 <h2 class="article__title">Почему сосредоточиться так сложно</h2>
                 <ul class="intro__list">
                     <li>
@@ -84,8 +84,8 @@
                         </p>
                     </li>
                 </ul>
-            </article>
-            <article class="article article__problems">
+            </section>
+            <section class="article article__problems">
                 <h2 class="article__title">Что снижает концентрацию внимания?</h2>
                 <ul class="problems__list">
                     <li>
@@ -119,8 +119,8 @@
                         </p>
                     </li>
                 </ul>
-            </article>
-            <article class="article article__solutions">
+            </section>
+            <section class="article article__solutions">
                 <h2 class="article__title">Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх секунд)
                 </h2>
                 <div>
@@ -181,33 +181,33 @@
                         </li>
                     </ul>
                 </div>
-            </article>
-            <article class="article galery">
+            </section>
+            <section class="article galery">
                 <h3 class="galery__title highlighted-text-m">А можно в картинках?</h3>
                 <div class="galery__content">
                     <picture class="img-sunset">
                         <source srcset="images/sunset.webp" type="image/webp">
-                        <img class="galery__img" src="images/sunset.png" alt="векторное изображение заката">
+                        <img class="galery__img" src="images/sunset.png" alt="векторное изображение заката" loading="lazy">
                     </picture>
                     <picture class="img-ice-cream">
                         <source srcset="images/ice-cream.webp" type="image/webp">
-                        <img class="galery__img" src="images/ice-cream.png" alt="векторное изображение мороженого">
+                        <img class="galery__img" src="images/ice-cream.png" alt="векторное изображение мороженого" loading="lazy">
                     </picture>
                     <picture class="img-tape">
                         <source srcset="images/tape.webp" type="image/webp">
-                        <img class="galery__img" src="images/tape.png" alt="векторное изображение пленочной кассеты">
+                        <img class="galery__img" src="images/tape.png" alt="векторное изображение пленочной кассеты" loading="lazy">
                     </picture>
                     <picture class="img-books">
                         <source srcset="images/books.webp" type="image/webp">
-                        <img class="galery__img" src="images/books.png" alt="векторное изображение книг">
+                        <img class="galery__img" src="images/books.png" alt="векторное изображение книг" loading="lazy">
                     </picture>
                     <picture class="img-street">
                         <source srcset="images/street.webp" type="image/webp">
-                        <img class="galery__img" src="images/street.png" alt="векторное изображение улицы">
+                        <img class="galery__img" src="images/street.png" alt="векторное изображение улицы" loading="lazy">
                     </picture>
                 </div>
-            </article>
-        </section>
+            </section>
+        
     </main>
     <footer class="footer decorated-zone">
         <span class="page__title">focus</span>
