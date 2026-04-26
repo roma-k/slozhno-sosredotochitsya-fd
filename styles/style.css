@@ -127,10 +127,11 @@
 
 .header__theme-menu-button:focus {
   outline: none;
+  border: none;
 }
 
 .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--accent-color-opacity40);
+  border-bottom: 1px solid currentColor;
 }
 
 .header__theme-menu-button_active {
