@@ -18,6 +18,7 @@
   --h1-text-color: #FFC2E6;
   --title-text-shadow: #FF8DCB;
   --link-shadow-color: #FF8DCB;
+  --accent-color-opacity40: rgba(50, 49, 45, 0.4);
   --display-toggle: none;
 }
 
@@ -33,6 +34,7 @@
     --h1-text-color: #FFC2E6;
     --title-text-shadow: #FF8DCB;
     --link-shadow-color: #FF8DCB;
+    --accent-color-opacity40: rgba(50, 49, 45, 0.4);
     --display-toggle: none;
   }
 }
